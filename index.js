@@ -4,5 +4,3 @@ import Manger from "./lib/Manager.js";
 
 import inquirer from "inquirer";
 console.log("Hello World");
-
-
