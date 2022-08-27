@@ -12,10 +12,10 @@ const outputFile = path.join(outputDir, "team.html");
 const template = require("./src/team-template");
 const profile = [];
 
-function menu() {
 
   function createManager(){
-    inquirer.prompt(
+    
+    return inquirer.prompt(
       [
         {
           type: "input",
@@ -56,7 +56,7 @@ function menu() {
 
   }
   function createEngineer(){
-    inquirer.prompt(
+    return inquirer.prompt(
       [
         {
           type: "input",
@@ -93,7 +93,7 @@ function menu() {
     teamOptions();
   }
   function createIntern(){
-    inquirer.prompt(
+    return inquirer.prompt(
       [
         {
           type: "input",
@@ -129,7 +129,7 @@ function menu() {
     });
     teamOptions();
   }
-  
+
   function buildTeam(){
     if (!fs.existSync(outputDir)) {
       fs.mkdirSync(outputDir);
@@ -137,8 +137,4 @@ function menu() {
     fs.writeFileSync(outputFile, template(profile), "utf-8")
   }
 
-createManager();
-};
-menu();
-
-
+createManager().then(createEngineer).then(createManager).then(createIntern).then(buildTeam)
