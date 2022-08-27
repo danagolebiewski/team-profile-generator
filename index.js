@@ -15,7 +15,41 @@ const profile = [];
 function menu() {
 
   function createManager(){
-
+    inquirer.prompt(
+      [
+        {
+          type: "input",
+          name: "name",
+          message: "Enter team member's name.",
+        },
+        {
+          type: "input",
+          name: "role",
+          message: "Select team member's role.",
+          choices: ["Manager", "Engineer", "Intern"],
+        },
+        {
+          type: "input",
+          name: "id",
+          message: "Enter member ID.",
+        },
+        {
+          type: "input",
+          name: "email",
+          message: "Enter members email address",
+        },
+        {
+          type: "input",
+          name: "office",
+          message: "What is your office number?",
+        },
+        
+      ]
+    ) 
+    .then(answers => {
+      const manager = new Manager(answers.mgrName);
+      profile.push(manager);
+    })
     teamOptions();
   }
   function teamOptions(){
@@ -39,6 +73,8 @@ function menu() {
 createManager();
 };
 menu();
+
+
 
 inquirer.prompt(
   [
@@ -65,13 +101,46 @@ inquirer.prompt(
     },
     {
       type: "input",
-      name: "office",
-      message: "What is your office number?",
+      name: "github",
+      message: "What is your GitHub URL?",
     },
-    
   ]
-) 
+)
 .then(answers => {
-  const manager = new Manager(answers.mgrName);
-  profile.push(manager);
-})
+  const engineer = new Engineer(answers.engName);
+  profile.push(engineer);
+});
+inquirer.prompt(
+  [
+    {
+      type: "input",
+      name: "name",
+      message: "What is your name?",
+    },
+    {
+      type: "input",
+      name: "role",
+      message: "What is your role?",
+      choices: ["Manager", "Engineer", "Intern"],
+    },
+    {
+      type: "input",
+      name: "id",
+      message: "What is your ID number?",
+    },
+    {
+      type: "input",
+      name: "email",
+      message: "What is your email address?",
+    },
+    {
+      type: "input",
+      name: "intern",
+      message: "What school are you attending?",
+    },
+  ]
+)
+.then(answers => {
+  const intern = new Intern(answers.intName);
+  profile.push(intern);
+});
