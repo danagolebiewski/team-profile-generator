@@ -61,7 +61,3 @@ const Employee = require("../lib/Employee.js");
 // this is get role method test 
     expect(cb).toThrow(err);
   });
-
-
-// Why don't the links in index.js work?
-// index.js importing files problem - multiple ways - neither work 
