@@ -1,6 +1,7 @@
-# Dana's ReadMe
+# Team Profile Generator
+By: Dana Golebiewski
 
-
+![Website Preview](./assets/website-preview.png)
 
 ## Table of Contents
 
@@ -33,7 +34,7 @@ The tests that are available are:
 
  ## [Video](#table-of-contents)
 
-### [Link to video](https://drive.google.com/file/d/1ju6MVTAOgK7Utw7xCDSPe4Xv2GiDIr4A/view)
+### [Link to video](https://drive.google.com/file/d/1mxm25ysy27YSWynX4DNf0NmEEycsK6AZ/view)
 
  ## [Questions](#table-of-contents)
 
