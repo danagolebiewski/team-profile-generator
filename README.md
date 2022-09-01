@@ -1,18 +1,46 @@
-# team-profile-generator
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for my team members and their information
-THEN an HTML file is generated that displays a nicely formatted team roster based on user input
-WHEN I click on an email address in the HTML
-THEN my default email program opens and populates the TO field of the email with the address
-WHEN I click on the GitHub username
-THEN that GitHub profile opens in a new tab
-WHEN I start the application
-THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number
-WHEN I enter the team manager’s name, employee ID, email address, and office number
-THEN I am presented with a menu with the option to add an engineer or an intern or to finish building my team
-WHEN I select the engineer option
-THEN I am prompted to enter the engineer’s name, ID, email, and GitHub username, and I am taken back to the menu
-WHEN I select the intern option
-THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
-WHEN I decide to finish building my team
-THEN I exit the application, and the HTML is generated
+# Dana's ReadMe
+
+
+
+## Table of Contents
+
+* [Description](#description)
+
+* [Installation](#installation)
+
+* [Tests](#tests)
+
+* [Video](#video)
+
+* [Questions](#questions)
+ 
+ ## [Description](#table-of-contents)
+ This app keeps track of your team by importing vital contact information.   
+
+ ## [Installation](#table-of-contents)
+ 1. Clone the repo
+ 2. Install the dependencies using npm i
+ 3. Answer the questions based on which role you select
+ 4. Choose "I don't need to add any more members" when you are finished
+
+ ## [Tests](#table-of-contents)
+The tests that are available are:
+
+*[Employee.test.js]
+*[Manager.test.js]
+*[Engineer.test.js]
+*[Intern.test.js] 
+
+ ## [Video](#table-of-contents)
+
+### [Link to video](https://drive.google.com/file/d/1ju6MVTAOgK7Utw7xCDSPe4Xv2GiDIr4A/view)
+
+ ## [Questions](#table-of-contents)
+
+ To see my other work take a look at my public repositories on github:
+
+ Github: [Github Link](https://github.com/danagolebiewski)
+
+ To contact me directly please reach out to the following email:
+
+ Email: [dana.golebiewski@gmail.com](mailto:dana.golebiewski@gmail.com)
