@@ -8,7 +8,7 @@ const addTeam = (team) => {
   <h5 class="card-title" style="text-align:center;">${manager.getName()}</h5>
   <ul class="card-text">
   <li> ID: ${manager.getId()} </li>
-  <li> Email: <a href ="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
+  <li> Email: <a class="text-light" href ="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
   <li> Office #: ${manager.getOfficeNumber()}</li>
   </ul>
 </div>
@@ -25,7 +25,7 @@ const addTeam = (team) => {
 <h5 class="card-title" style="text-align:center;">${engineer.getName()}</h5>
 <ul class="card-text">
 <li> ID: ${engineer.getId()} </li>
-<li> Email: <a href ="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
+<li> Email: <a class="text-light" href ="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
 <li> Github: ${engineer.getGithub()}</li>
 </ul>
 </div>
@@ -42,7 +42,7 @@ const addTeam = (team) => {
 <h5 class="card-title" style="text-align:center;">${intern.getName()}</h5>
 <ul class="card-text">
 <li> ID: ${intern.getId()} </li>
-<li> Email: <a href ="mailto:${intern.getEmail()}">${intern.getEmail()}</a></li>
+<li> Email: <a class="text-light" href ="mailto:${intern.getEmail()}">${intern.getEmail()}</a></li>
 <li> School: ${intern.getSchool()}</li>
 </ul>
 </div>
