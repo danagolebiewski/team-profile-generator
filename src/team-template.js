@@ -26,7 +26,7 @@ const addTeam = (team) => {
 <ul class="card-text">
 <li> ID: ${engineer.getId()} </li>
 <li> Email: <a class="text-light" href ="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
-<li> Github: ${engineer.getGithub()}</li>
+<li> Github: <a href="https://github.com/${engineer.getGithub()}" targer="_blank" title="Github"> ${engineer.getGithub()}</a></li>
 </ul>
 </div>
 </div>
