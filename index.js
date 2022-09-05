@@ -94,7 +94,7 @@ function menu () {
         {
           type: "input",
           name: "engGithub",
-          message: "What is your GitHub URL?",
+          message: "What is your GitHub name?",
         },
       ]
     )
