@@ -1,6 +1,6 @@
 const Employee = require("../lib/Employee.js");
 
-// describe("Employee", () => {
+describe("Employee", () => {
   it("Should create an object", () => {
     const employee = new Employee();
 
@@ -60,4 +60,4 @@ const Employee = require("../lib/Employee.js");
     const cb = () => new Employee("Dana", 3, "dana.golebiewski@gmail");
 // this is get role method test 
     expect(cb).toThrow(err);
-  });
+  })});
